@@ -418,9 +418,9 @@ class modelCollection(dict):
 				while gtk.events_pending():
 					gtk.main_iteration(False)
 			# Format number string.
-			numberString = str(i).zfill(digits)
+			numberString = str(i+1)
 			# Create image file string.
-			fileString = path[:-4] + numberString + path[-4:]
+			fileString = path[:-4] + "_" + numberString + path[-4:]
 			print "Saving image " + fileString + "."
 			image = Image.fromarray(self.updateSliceImage(i))
 			image.save(fileString)
