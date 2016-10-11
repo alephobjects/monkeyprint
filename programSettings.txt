@@ -48,7 +48,7 @@ projectorSizeY:800
 projectorSizeX:1280
 avrdudeBaudrate:57600
 reverseBuild:False
-layerHeight:0.05
+layerHeight:0.01
 buildSizeZ:150.0
 buildSizeY:40
 versionMinor:11
